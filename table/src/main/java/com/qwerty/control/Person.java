@@ -1,22 +1,24 @@
 package com.qwerty.control;
 
 public class Person {
-    private String name, surname;
-
-
+    
+    private String name;
+    private String surname;
+    
+    public Person(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+    
+    public Person() {
+        this("invalid", "invalid");
+    }
+    
     public String getName() {
         return name;
     }
 
     public String getSurname() {
         return surname;
-    }
-
-    public Person(String name, String surname) {
-        this.name = name;
-        this.surname = surname;
-    }
-
-    public Person() {
     }
 }
